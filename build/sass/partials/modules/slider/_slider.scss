@@ -1,0 +1,20 @@
+.carousel {
+    &-control.left,
+    .carousel-control.right {
+        background-image: none;
+    }
+}
+
+.no-picture {
+    .carousel {
+        img {
+            margin: 80px 0;
+            @include media(minS) {
+                margin: 50px 0;
+            }
+            @include media(minM) {
+                margin: 0;
+            }
+        }
+    }
+}

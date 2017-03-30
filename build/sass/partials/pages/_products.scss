@@ -1,0 +1,27 @@
+.products-page {
+    .module-project {
+        height: auto;
+    }
+
+    .project-title {
+        margin-bottom: 5px;
+    }
+
+    .intro {
+        padding: 50px 10px;
+        @include media(minS) {
+            padding: 70px 40px;
+        }
+        @include media(minM) {
+            padding: 80px 120px 120px;
+        }
+        @include media(minL) {
+            padding: 110px 120px 120px;
+        }
+    }
+}
+@for $i from 1 through 8 {
+    .pp-project-#{$i} {
+        background-image: url('../img/products-page/pp-#{$i}.jpg');
+    }
+}

@@ -1,0 +1,7 @@
+.home-page {
+    .module-double {
+        @include media(minM) {
+            height: 570px;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.text {
+    @include media(minS) {
+        height: 420px;
+    }
+    @include media(minM) {
+        height: 100%;
+    }
+
+    &-content {
+        padding: 40px 10px;
+        @include media(minS) {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            border-left: 2px solid $basicD;
+            padding: 0 0 0 25px;
+        }
+    }
+
+    &-title {
+        font-size: 2.8rem;
+        @include media(minS) {
+            font-size: 3.2rem;
+        }
+        @include media(minL) {
+            font-size: 3.8rem;
+        }
+    }
+
+    &-subtitle {
+        font-style: italic;
+        padding: 10px 0;
+        display: block;
+    }
+
+    &-more-link {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 2px 5px;
+    }
+
+    .single-title {
+        margin-bottom: 19px;
+    }
+
+    .without-border {
+        border-left: none;
+        padding-left: 0;
+    }
+}

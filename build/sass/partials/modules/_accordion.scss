@@ -1,0 +1,65 @@
+.panel {
+    &-body {
+        padding: 25px;
+    }
+
+    &-group {
+        margin-top: 40px;
+        @include media(minS) {
+            margin-top: 70px;
+        }
+
+        span {
+            float: right;
+            font-size: 1.2rem;
+        }
+
+        p {
+            padding-bottom: 10px;
+        }
+
+        a {
+            display: block;
+        }
+    }
+
+    &-title {
+        font-size: 1.2rem;
+        @include media(minS) {
+            font-size: 1.5rem;
+        }
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        .collapsed {
+            .glyphicon:before {
+                content: "\002b"; // plus
+            }
+        }
+
+        .glyphicon:before {
+            content: "\2212";
+        }
+    }
+
+    &-heading {
+        padding: 18px 15px;
+        border-bottom: 1px solid rgba(136, 136, 136, 0);
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    &-default {
+        border-color: $basicW;
+
+        & > .panel-heading {
+            color: #333;
+            background-color: $basicW;
+            border-color: $basicW;
+        }
+
+        & > .panel-heading+.panel-collapse > .panel-body {
+            border-top-color: #ececec;
+        }
+    }
+}

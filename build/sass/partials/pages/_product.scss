@@ -1,0 +1,31 @@
+.product-page {
+    .module-double {
+        @include media(minM) {
+            height: 570px;
+        }
+    }
+
+    .intro {
+        padding-top: 50px;
+    }
+
+    .text {
+        &-content {
+            @include media(minS) {
+                line-height: 1.8;
+            }
+        }
+    }
+
+    .project {
+        height: auto;
+        @include media(minS) {
+            height: inherit;
+        }
+    }
+}
+@for $i from 1 through 2 {
+    .pps-project-#{$i} {
+        background-image: url('../img/product-page/pps-#{$i}.jpg');
+    }
+}

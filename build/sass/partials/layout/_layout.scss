@@ -1,0 +1,21 @@
+@import "partials/layout/footer";
+@include media(minXL) {
+    .container {
+        max-width: 1400px;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+.col-md-4,
+.col-xs-1 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+main > .row {
+    background-color: $basicW;
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+}

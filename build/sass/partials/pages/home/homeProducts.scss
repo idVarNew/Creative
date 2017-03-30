@@ -1,0 +1,86 @@
+.products {
+    &-section {
+        @include media(minM) {
+            height: 760px;
+        }
+    }
+
+    &-content {
+        border-bottom: 1px solid $color5;
+        @include media(minS) {
+            height: 420px;
+        }
+        @include media(minM) {
+            position: relative;
+            height: 100%;
+            border-bottom: 0 solid $color5;
+        }
+    }
+
+    &-carousel {
+        .item {
+            height: 380px;
+        }
+
+        &.project {
+            height: auto;
+        }
+        @include media(minM) {
+            .project-content {
+                width: 40%;
+            }
+        }
+    }
+}
+
+.sub-section {
+    .project {
+        height: 380px;
+    }
+
+    .text {
+        @include media(minM) {
+            height: 380px;
+        }
+    }
+}
+
+.hp-project {
+    &-2 {
+        background-position: bottom;
+        @include media(minM) {
+            background-position: center;
+        }
+    }
+
+    &-5 {
+        animation-name: changeBackgroundImage;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+}
+@keyframes changeBackgroundImage {
+    0% {
+        background-image: url("../img/home-page/sq-5.jpg");
+    }
+
+    50% {
+        background-image: url("../img/home-page/sq-5-b.jpg");
+    }
+
+    100% {
+        background-image: url("../img/home-page/sq-5.jpg");
+    }
+}
+@for $i from 1 through 8 {
+    .hp-project-#{$i} {
+        background-image: url('../img/home-page/mobile/sq-#{$i}.jpg');
+    }
+}
+@include media(minS) {
+     @for $i from 1 through 8{
+        .hp-project-#{$i} {
+            background-image: url('../img/home-page/sq-#{$i}.jpg');
+        }
+    }
+}

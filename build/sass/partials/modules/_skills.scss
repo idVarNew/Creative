@@ -1,0 +1,6 @@
+.skills {
+    margin-top: 40px;
+    @include media(minS) {
+        margin-top: 70px;
+    }
+}

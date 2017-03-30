@@ -1,0 +1,30 @@
+body .navbar-toggle {
+    display: block;
+    margin-right: 0;
+
+    .icon-bar {
+        background-color: $basicD;
+        transition: all 0.4s;
+
+        &:nth-of-type(2) {
+            transform: rotate(45deg) translateY(5px) translateX(4px);
+        }
+
+        &:nth-of-type(3) {
+            opacity: 0;
+        }
+
+        &:nth-of-type(4) {
+            transform: rotate(-45deg) translateY(-3.9px) translateX(4.1px);
+        }
+    }
+
+    &.collapsed {
+        .icon-bar {
+            transition: all 0.4s;
+            width: 25px;
+            opacity: 1;
+            transform: rotate(0deg) translateY(0px) translateX(0px);
+        }
+    }
+}

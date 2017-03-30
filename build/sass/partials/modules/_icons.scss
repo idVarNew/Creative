@@ -1,0 +1,51 @@
+.icon {
+    display: inline-block;
+    font-size: 1.5em;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    background: url("../img/icons.svg") no-repeat;
+    -webkit-background-size: 1em 7em;
+    background-size: 1em 9em;
+    margin-left: 15px;
+
+    &-emial {
+        background-position: 0 0;
+    }
+
+    &-github {
+        background-position: 0 -1em;
+    }
+
+    &-behance {
+        background-position: 0 -2em;
+    }
+
+    &-pinterest {
+        background-position: 0 -3em;
+    }
+
+    &-twitter {
+        background-position: 0 -4em;
+    }
+
+    &-linkedIn {
+        background-position: 0 -5em;
+    }
+
+    &-facebook {
+        background-position: 0 -6em;
+    }
+
+    &-arrow-top {
+        background-position: 0 -7em;
+    }
+
+    &-arrow-bottom {
+        background-position: 0 -8em;
+    }
+
+    &:hover {
+        opacity: 0.5;
+    }
+}

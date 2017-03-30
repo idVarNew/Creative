@@ -1,0 +1,9 @@
+.product-info {
+    padding: 50px 10px;
+    @include media(minS) {
+        padding: 70px 40px;
+    }
+    @include media(minL) {
+        padding: 110px 120px 120px;
+    }
+}

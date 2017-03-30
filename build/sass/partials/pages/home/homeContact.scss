@@ -1,0 +1,5 @@
+.contact-section {
+    @include media(minM) {
+        height: 380px;
+    }
+}

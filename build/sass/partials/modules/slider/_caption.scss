@@ -1,0 +1,35 @@
+.carousel-caption {
+    color: #222;
+    text-shadow: none;
+    position: absolute;
+    top: 0;
+    @include media(minS) {
+        top: 1%;
+    }
+    @include media(minL) {
+        top: 8%;
+    }
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+
+    &-title {
+        background-color: $basicW;
+        font-size: 2.3rem;
+        padding: 2px 10px;
+        @include media(minS) {
+            font-size: 3.0rem;
+        }
+        @include media(minM) {
+            font-size: 3.5rem;
+        }
+        display: inline-block;
+        padding: 0 10px;
+        margin-bottom: 10px;
+    }
+
+    span {
+        font-size: 1.2rem;
+        display: block;
+    }
+}

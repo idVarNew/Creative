@@ -1,0 +1,23 @@
+.contact-page {
+    .module-double {
+        @include media(minM) {
+            height: 570px;
+        }
+    }
+
+    .project {
+        display: none;
+        @include media(minM) {
+            display: block;
+        }
+    }
+
+    .text-content {
+        padding: 25px;
+    }
+}
+@for $i from 1 through 2 {
+    .cp-project-#{$i} {
+        background-image: url('../img/contact-page/cp-#{$i}.jpg');
+    }
+}

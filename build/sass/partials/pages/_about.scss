@@ -1,0 +1,35 @@
+.about-page {
+    .module-double {
+        @include media(minM) {
+            height: 570px;
+        }
+    }
+
+    .text {
+        border-bottom: 1px solid $color5;
+        @include media(minM) {
+            border-bottom: none;
+        }
+
+        &-content {
+            @include media(minS) {
+                line-height: 1.8;
+            }
+        }
+    }
+}
+
+.about-info {
+    padding: 50px 10px;
+    @include media(minS) {
+        padding: 70px 40px;
+    }
+    @include media(minL) {
+        padding: 110px 120px 120px;
+    }
+}
+@for $i from 1 through 3 {
+    .ap-project-#{$i} {
+        background-image: url('../img/about-page/ap-#{$i}.jpg');
+    }
+}

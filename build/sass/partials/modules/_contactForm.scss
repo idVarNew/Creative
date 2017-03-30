@@ -1,0 +1,71 @@
+.contact-form {
+    & > div {
+        margin-bottom: 15px;
+    }
+
+    &-message,
+    input[type="email"],
+    input[type="text"] {
+        width: 100%;
+        padding: 4px 0 10px;
+        border: none;
+        border-bottom: 1px solid $basicD;
+    }
+
+    &-message {
+        resize: none;
+    }
+
+    input[type="submit"] {
+        width: auto;
+        background-color: $basicW;
+        border: 1px solid $basicD;
+        padding: 8px 15px;
+        color: $basicD;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+        cursor: not-allowed;
+
+        &:hover {
+            border: 1px solid $color4;
+        }
+    }
+}
+
+.required {
+    &-text {
+        display: block;
+        margin-top: 15px;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+}
+
+::-webkit-input-placeholder {
+    font-family: Raleway;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+:-moz-placeholder {
+    font-family: Raleway;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+::-moz-placeholder {
+    font-family: Raleway;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+:-ms-input-placeholder {
+    font-family: Raleway;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}

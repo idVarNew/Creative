@@ -1,0 +1,9 @@
+.copyright-notice {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    @include media(minM) {
+        transform: translateY(7px);
+        padding-bottom: 0;
+    }
+}

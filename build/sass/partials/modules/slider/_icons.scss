@@ -1,0 +1,49 @@
+.carousel {
+    .glyphicon-chevron-left:before {
+        content: "\e257";
+        color: $basicD;
+        text-shadow: none;
+        font-size: 1.5rem;
+    }
+
+    .glyphicon-chevron-right:before {
+        content: "\e258";
+        color: $basicD;
+        text-shadow: none;
+        font-size: 1.5rem;
+    }
+    @include media(minS) {
+        .glyphicon-chevron-left::after {
+            content: "PREV SLIDE";
+            display: block;
+            color: $basicD;
+            font-size: 1.2rem;
+            text-shadow: none;
+            transform: rotate(-90deg);
+            white-space: nowrap;
+            font-family: Raleway;
+            font-weight: 900;
+            margin-left: -70px;
+            text-align: right;
+            letter-spacing: 5px;
+            margin-top: -12px;
+        }
+
+        .glyphicon-chevron-right::after {
+            content: "NEXT SLIDE";
+            display: block;
+            color: $basicD;
+            font-size: 1.2rem;
+            text-shadow: none;
+            transform: rotate(-90deg);
+            white-space: nowrap;
+            font-family: Raleway;
+            font-weight: 900;
+            margin-left: -23px;
+            text-align: right;
+            letter-spacing: 5px;
+            margin-top: -19px;
+            position: absolute;
+        }
+    }
+}

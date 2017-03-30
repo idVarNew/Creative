@@ -1,0 +1,114 @@
+.project {
+    background-size: cover;
+    padding: 0;
+    overflow: hidden;
+    height: 320px;
+    visibility: hidden;
+    @include media(minS) {
+        height: 420px;
+    }
+    @include media(minM) {
+        height: 100%;
+    }
+
+    &-carousel {
+        height: auto;
+    }
+
+    &-content {
+        transition: all 1s;
+        position: absolute;
+        z-index: 45;
+        left: 0;
+        bottom: 0;
+        transform: inherit;
+        background-color: rgba(252, 252, 252, 0);
+        padding: 20px;
+        color: $basicD;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        opacity: 1;
+        width: 100%;
+        margin-bottom: 0;
+        opacity: 1;
+        font-weight: bold;
+        @include media(minM) {
+            opacity: 0;
+            transition: all 1s;
+            z-index: 45;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $basicD;
+            padding: 20px;
+            color: $basicW;
+            bottom: inherit;
+            width: inherit;
+            font-weight: normal;
+        }
+    }
+
+    &-title {
+        font-size: 1.2rem;
+        @include media(minS) {
+            font-size: 1.4rem;
+        }
+        @include media(minM) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &-image {
+        background-size: cover;
+        height: 100%;
+        transform: scale(1);
+        transition: transform 0.5s;
+        background-position: bottom;
+        background-position: center;
+    }
+
+    &-author {
+        font-size: 1.0rem;
+        border-bottom: 1px solid $basicD;
+        @include media(minM) {
+            border-bottom: 1px solid $basicW;
+        }
+        padding-bottom: 4px;
+    }
+
+    .glyphicon {
+        font-size: 2rem;
+        display: block;
+        padding-top: 10px;
+        color: $basicD;
+        @include media(minM) {
+            color: $basicW;
+        }
+    }
+
+    &-shadow {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.16);
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        transition: all 1s;
+        height: 100%;
+    }
+
+    &:hover .project-content {
+        opacity: 1;
+        transition: all 1s;
+    }
+
+    &:hover .project-image {
+        transform: scale(1.2);
+        transition: transform 0.5s;
+    }
+
+    &:hover .project-shadow {
+        opacity: 1;
+        transition: all 1s;
+    }
+}
