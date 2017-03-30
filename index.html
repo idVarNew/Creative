@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Creative - Home Page</title>
+        <link href="assets/img/favicon.ico" rel="shortcut icon"/>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="assets/css/styles.css" rel="stylesheet"/>
+    </head>
+    <body class="home-page" itemscope itemtype="https://schema.org/WebPage">
+        <div class="container">
+            <header>
+                <h1 class="visuallyhidden">
+                    Creative
+                </h1>
+                <nav class="navbar">
+                    <h2 class="visuallyhidden">
+                        Main menu
+                    </h2>
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="index.html">Creative</a>
+                        </div>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#Menu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="Menu">
+                            <ul class="nav navbar-nav show-hide">
+                                <li class="active">
+                                    <a href="index.html">Home</a>
+                                    <span class="sr-only">(current)</span>
+                                </li>
+                                <li>
+                                    <a href="pages/products.html">Products</a>
+                                </li>
+                                <li>
+                                    <a href="pages/about.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="pages/contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <section id="carousel" class="carousel slide" data-ride="carousel">
+                    <h2 class="visuallyhidden">
+                        What's new?
+                    </h2>
+                    <div class="carousel-inner" role="listbox">
+                        <article class="item active">
+                            <a href="pages/product.html" itemprop="url">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="assets/img/main-slider/mobile/slide1.jpg">
+                                    <img src="assets/img/main-slider/slide1.jpg" alt="This is a long decription of the image" itemprop="image">
+                                </picture>
+                                <div class="carousel-caption">
+                                    <h3 class="carousel-caption-title">
+                                        Featured
+                                    </h3>
+                                    <span>
+                                        product
+                                    </span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="item">
+                            <a href="pages/product.html" itemprop="url">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="assets/img/main-slider/mobile/slide2.jpg">
+                                    <img src="assets/img/main-slider/slide2.jpg" alt="This is a long decription of the image" itemprop="image">
+                                </picture>
+                                <div class="carousel-caption">
+                                    <h3 class="carousel-caption-title">
+                                        Newest
+                                    </h3>
+                                    <span>
+                                        ptoducts
+                                    </span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="item">
+                            <a href="pages/product.html" itemprop="url">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="assets/img/main-slider/mobile/slide3.jpg">
+                                    <img src="assets/img/main-slider/slide3.jpg" alt="This is a long decription of the image" itemprop="image">
+                                </picture>
+                                <div class="carousel-caption">
+                                    <h3 class="carousel-caption-title">
+                                        Best
+                                    </h3>
+                                    <span>
+                                        product of the week
+                                    </span>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+                </section>
+                <section id="about-section" class="row module-double about-section">
+                    <h2 class="visuallyhidden">
+                        Welcome info with short information about company
+                    </h2>
+                    <div class=" col-sm-6 col-xs-12 text  about-content ">
+                        <article class="text-content ">
+                            <header>
+                                <h2 class="text-title">
+                                    About
+                                </h2>
+                                <span class="text-subtitle">
+                                    Creative company
+                                </span>
+                            </header>
+                            <p>
+                                Lorem ipsum dolor sit amet, consec tetuer adipiscing elit, sed dia
+                                <a class="modal-1" data-toggle="modal" href="#modal-1">show bootstrap modal</a>tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            </p>
+                            <a href="pages/about.html" class="text-more-link">Learn more</a>
+                        </article>
+                    </div>
+                    <article class="col-sm-6 col-xs-12 project" itemscope itemtype="http://schema.org/CreativeWork">
+                        <div class="project-content">
+                            <h3 class="project-title" itemprop="name">Random product</h3>
+                            <span class="project-author" itemprop="creator">by Charlotte</span>
+                            <a href="pages/product.html" class="more-link" itemprop="url">
+                                <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <meta itemprop="image" content="assets/img/home-page/hp-1.jpg"/>
+                        <div class="hp-project-1 project-image" aria-label="Sample project from our last collection" role="img" tabindex="-1"></div>
+                        <div class="project-shadow"></div>
+                    </article>
+                </section>
+                <section id="products-section" class="row  products-section">
+                    <h2 class="visuallyhidden">
+                        Featured products
+                    </h2>
+                    <article class=" col-sm-4 col-xs-12 project" itemscope itemtype="http://schema.org/CreativeWork">
+                        <div class="project-content">
+                            <h3 class="project-title" itemprop="name">Modern design 1</h3>
+                            <span class="project-author" itemprop="creator">by Jenny</span>
+                            <a href="pages/product.html" class="more-link" itemprop="url">
+                                <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <meta itemprop="image" content="assets/img/home-page/hp-2.jpg"/>
+                        <div class="hp-project-2 project-image" aria-label="Sample project from our last collection" role="img" tabindex="-1"></div>
+                        <div class="project-shadow"></div>
+                    </article>
+                    <div class="col-sm-8 col-xs-12">
+                        <div class="row sub-section">
+                            <article class="col-sm-6 col-xs-12 project" itemscope itemtype="http://schema.org/CreativeWork">
+                                <div class="project-content">
+                                    <h3 class="project-title" itemprop="name">Modern design 2</h3>
+                                    <span class="project-author" itemprop="creator">by Sean</span>
+                                    <a href="pages/product.html" class="more-link" itemprop="url">
+                                        <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                                    </a>
+                                </div>
+                                <meta itemprop="image" content="assets/img/home-page/hp-3.jpg"/>
+                                <div class="hp-project-3 project-image" aria-label="Sample project from our last collection" role="img" tabindex="-1"></div>
+                                <div class="project-shadow"></div>
+                            </article>
+                            <div class="col-sm-6 col-xs-12  project products-carousel">
+                                <div id="products-carousel" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner" role="listbox">
+                                        <article class="item active project-slide-1" itemscope itemtype="http://schema.org/CreativeWork">
+                                            <div class="project-content">
+                                                <h3 class="project-title" itemprop="name">Modern design 3</h3>
+                                                <span class="project-author" itemprop="creator">by Dan</span>
+                                                <a href="pages/product.html" class="more-link" itemprop="url">
+                                                    <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                                                </a>
+                                            </div>
+                                            <meta itemprop="image" content="assets/img/home-page/hp-4.jpg"/>
+                                            <div class="project-image hp-project-4" aria-label="Sample project from our last collection" role="img" tabindex="-1"></div>
+                                            <div class="project-shadow"></div>
+                                        </article>
+                                        <article class="item project-slide-2" itemscope itemtype="http://schema.org/CreativeWork">
+                                            <div class="project-content">
+                                                <h3 class="project-title" itemprop="name">Modern design 4</h3>
+                                                <span class="project-author" itemprop="creator">by Mia
+                                                </span>
+                                                <a href="pges/product.html" class="more-link" itemprop="url">
+                                                    <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                                                </a>
+                                            </div>
+                                            <meta itemprop="image" content="assets/img/home-page/hp-8.jpg"/>
+                                            <div class="project-image hp-project-8" aria-label="Sample project from our last collection" role="img" tabindex="-1"></div>
+                                            <div class="project-shadow"></div>
+                                        </article>
+                                    </div>
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#products-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#products-carousel" data-slide-to="1"></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row sub-section">
+                            <article class=" col-sm-6 col-xs-12 project" itemscope itemtype="http://schema.org/CreativeWork">
+                                <div class="project-content">
+                                    <h3 class="project-title" itemprop="name">Modern design 5</h3>
+                                    <span class="project-author" itemprop="creator">by Kate</span>
+                                    <a href="pags/product.html" class="more-link" itemprop="url">
+                                        <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                                    </a>
+                                </div>
+                                <meta itemprop="image" content="assets/img/home-page/hp-5.jpg"/>
+                                <div class="hp-project-5 project-image" aria-label="Sample project from our last collection" role="img" tabindex="-1"></div>
+                                <div class="project-shadow"></div>
+                            </article>
+                            <article class="col-sm-6 col-xs-12 text  products-content">
+                                <div class="text-content ">
+                                    <header>
+                                        <h2 class="text-title">
+                                            Products
+                                        </h2>
+                                        <span class="text-subtitle">
+                                            Best quality
+                                        </span>
+                                    </header>
+                                    <p>
+                                        Lorem ipsum dolor na aliqua lobortis nisl ut aliquip ex ea commodo consequat.
+                                    </p>
+                                    <a href="pages/products.html" class="text-more-link" itemprop="significantLink">Learn more</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section id="contact-section" class="row contact-section">
+                    <div class=" col-sm-8 col-xs-12 text contact-content">
+                        <div class="text-content">
+                            <header>
+                                <h2 class="text-title">
+                                    Get in touch
+                                </h2>
+                                <span class="text-subtitle">
+                                    Consectetuer adipisin
+                                </span>
+                            </header>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                                ea commodo consequat.
+                            </p>
+                            <a href="pages/contact.html" class="text-more-link" itemprop="significantLink">Learn more</a>
+                        </div>
+                    </div>
+                    <article class=" col-sm-4 col-xs-12 project" itemscope itemtype="http://schema.org/CreativeWork">
+                        <div class="project-content">
+                            <h3 class="project-title" itemprop="name">Random product</h3>
+                            <span class="project-author" itemprop="creator">by Creative</span>
+                            <a href="pages/product.html" class="more-link" itemprop="url">
+                                <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div class="hp-project-7 project-image "></div>
+                        <div class="project-shadow"></div>
+                    </article>
+                </section>
+            </main>
+            <footer>
+                <div class="row footer-content">
+                    <div class=" col-sm-7 col-xs-12">
+                        <p class="copyright-notice">
+                            Copyright (c) 2016 All Rights Reserved.
+                        </p>
+                    </div>
+                    <article class=" col-sm-5 col-xs-12 text-right">
+                        <h2 class="visuallyhidden">
+                            Social media links
+                        </h2>
+                        <p class="footer-icons">
+                            <a href="http://github.com" aria-label="Visit my Github page">
+                                <span class="icon icon-github" aria-hidden="true"></span>
+                            </a>
+                            <a href="http://behence.com" aria-label="Visit my Behance page">
+                                <span class="icon  icon-behance" aria-hidden="true"></span>
+                            </a>
+                            <a href="http://pinterest.com" aria-label="Visit my Pinterest page">
+                                <span class="icon icon-pinterest" aria-hidden="true"></span>
+                            </a>
+                            <a href="http://twitter.com" aria-label="Visit my Twitter profile">
+                                <span class="icon icon-twitter" aria-hidden="true"></span>
+                            </a>
+                            <a href="http//facebook.com" aria-label="Visit my Facebook page">
+                                <span class="icon  icon-facebook" aria-hidden="true"></span>
+                            </a>
+                        </p>
+                    </article>
+                </div>
+            </footer>
+        </div>
+        <script src="//code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="assets/js/scripts.min.js"></script>
+    </body>
+</html>
